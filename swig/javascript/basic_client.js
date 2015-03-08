@@ -44,9 +44,9 @@ var nextMsg = alljoyn._AJ_Message();
 status = alljoyn.AJ_UnmarshalMsg(bus, nextMsg, 5000);
 console.log("---- 5 ---- ");
 if (nextMsg.msgId = alljoyn.AJ_REPLY_ID(basic_client_cat)) {
-	var arg = alljoyn._AJ_Arg();
+    var arg = alljoyn._AJ_Arg();
 console.log("---- 6 ---- ");
-	alljoyn.AJ_UnmarshalArg(nextMsg, arg);
+    alljoyn.AJ_UnmarshalArg(nextMsg, arg);
 console.log("---- 7 ---- ");
-	console.log(serviceName+'.cat'+' (path='+servicePath+') returned: ' + arg.val.v_string);
+    console.log(serviceName+'.cat'+' (path='+servicePath+') returned: ' + arg.val.v_string);
 }
