@@ -16967,12 +16967,12 @@ static SwigV8ReturnValue _wrap_AJ_StartClient(const SwigV8Arguments &args) {
   } 
   arg6 = (uint16_t)(val6);
   arg7 = &temp7;
-  res8 = SWIG_ConvertPtr(args[7], &argp8,SWIGTYPE_p__AJ_SessionOpts, 0 |  0 );
+  res8 = SWIG_ConvertPtr(args[6], &argp8,SWIGTYPE_p__AJ_SessionOpts, 0 |  0 );
   if (!SWIG_IsOK(res8)) {
     SWIG_exception_fail(SWIG_ArgError(res8), "in method '" "AJ_StartClient" "', argument " "8"" of type '" "AJ_SessionOpts const *""'"); 
   }
   arg8 = (AJ_SessionOpts *)(argp8);
-  result = (AJ_Status)AJ_StartClient(arg1,(char const *)arg2,arg3,arg4,(char const *)arg5,arg6,arg7,(_AJ_SessionOpts const *)arg8);
+  result = (AJ_Status)AJ_StartClient(arg1,(char const *)arg2,arg3,arg4,(char const *)arg5,arg6,arg7,arg8);
   jsresult = SWIG_From_int((int)(result));
   if (SWIG_IsTmpObj(res7)) {
     jsresult = SWIGV8_AppendOutput(jsresult, SWIG_From_long((*arg7)));
